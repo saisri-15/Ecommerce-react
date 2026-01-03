@@ -1,0 +1,68 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 12px;
+}
+
+/* Logo */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* 🔥 This makes search stretch till screen end */
+.search-container {
+  flex: 1;                 /* ✅ takes all remaining space */
+}
+
+.search-container input {
+  width: 100%;             /* ✅ fill container */
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Cart */
+.cart {
+  white-space: nowrap;
+}
+.search-container input {
+  height: 38px;
+  border-radius: 6px;
+}
+.search-container input:focus {
+  outline: none;
+  border-color: #f3a847;
+  box-shadow: 0 0 0 2px rgba(243,168,71,0.3);
+}
+/* 🔥 Main container */
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 side by side */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual product card */
+/* Product card layout */
+.product-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+/* 🔥 DECREASE IMAGE SIZE HERE */
+.product-img {
+  width: 120px;        /* ✅ control width */
+  height: 140px;       /* ✅ control height */
+  object-fit: contain; /* prevents stretching */
+  flex-shrink: 0;      /* prevents growing */
+}
+

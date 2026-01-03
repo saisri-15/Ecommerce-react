@@ -1,0 +1,39 @@
+body { margin: 0; font-family: Arial; }
+
+.navbar {
+  display: flex;
+  padding: 10px;
+  background: #131921;
+  color: white;
+}
+
+.search { flex: 1; margin: 0 10px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.card img {
+  width: 100px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.details {
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+}
+
+.dark { background: #121212; color: white; }
+.light { background: white; color: black; }
